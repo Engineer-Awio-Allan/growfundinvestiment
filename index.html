@@ -75,6 +75,26 @@
       border-color: var(--bs-primary);
       transform: translateY(-5px);
     }
+    
+
+     .fade-slider {
+    position: relative;
+  }
+  
+  .slider-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .slider-img.active {
+    opacity: 1;
+  }
   </style>
 </head>
 <body>
@@ -163,23 +183,15 @@
       </div>
     </section>
 
-    <!-- Image Gallery -->
-    <section class="py-0">
-      <div class="container-fluid px-0">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="assets/image2.png" alt="GrowFund Headquarters" class="img-fluid w-100 gallery-img">
-          </div>
-          <div class="col-md-4">
-            <img src="assets/image1.jpg" alt="Our Advisory Team" class="img-fluid w-100 gallery-img">
-          </div>
-          <div class="col-md-4">
-            <img src="assets/image2.png" alt="Satisfied Client" class="img-fluid w-100 gallery-img">
-          </div>
-        </div>
-      </div>
-    </section>
-
+   <section class="py-5 bg-light">
+  <div class="container-fluid px-0">
+    <div class="fade-slider" style="height: 400px; position: relative; overflow: hidden;">
+      <img src="assets/image2.png" alt="GrowFund Headquarters" class="slider-img active">
+      <img src="assets/image1.jpg" alt="Our Advisory Team" class="slider-img">
+      <img src="assets/image2.png" alt="Satisfied Client" class="slider-img">
+    </div>
+  </div>
+</section>
     <!-- Services Overview -->
     <section class="py-5 bg-light">
       <div class="container">
@@ -400,6 +412,21 @@
         }
       });
     });
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.slider-img');
+    let current = 0;
+    
+    function nextSlide() {
+      images[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
+    }
+    
+    setInterval(nextSlide, 3000); // Change image every 3 seconds
+  });
+
   </script>
 </body>
 </html>
