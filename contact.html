@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - GrowFund</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <style>
+    .hero-banner {
+      background: linear-gradient(135deg, #0d6efd 0%, #084298 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .divider {
+      width: 80px;
+      height: 3px;
+    }
+    
+    .icon-box {
+      width: 70px;
+      height: 70px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    
+    .icon-box-sm {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .hover-top {
+      transition: all 0.3s ease;
+    }
+    
+    .hover-top:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+    
+    .form-control, .form-select, .form-check-input {
+      border-color: #dee2e6;
+    }
+    
+    .form-control:focus, .form-select:focus {
+      border-color: #0d6efd;
+      box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+    
+    .form-floating label {
+      color: #6c757d;
+    }
+    
+    .form-floating>.form-control:focus~label, 
+    .form-floating>.form-control:not(:placeholder-shown)~label, 
+    .form-floating>.form-select~label {
+      color: #0d6efd;
+    }
+    
+    .ratio-21x9 {
+      --bs-aspect-ratio: 42.8571428571%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 shadow">
+    <div class="container">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img src="assets/image.png" alt="GrowFund Logo" height="40" class="me-2">
+        <span class="fw-bold fs-4">GrowFund</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a href="index.html" class="nav-link px-3 fw-medium text-white fs-5 fw-bold">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link px-3 fw-medium text-white fs-5 fw-bold">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link px-3 fw-medium text-white fs-5 fw-bold">Services</a></li>
+          <li class="nav-item"><a href="careers.html" class="nav-link px-3 fw-medium text-white fs-5 fw-bold">Careers</a></li>
+          <li class="nav-item active"><a href="contact.html" class="nav-link px-3 fw-medium text-white fs-5 fw-bold">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-banner bg-gradient-primary text-white text-center py-5">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h1 class="display-4 fw-bold mb-4">Contact GrowFund</h1>
+            <p class="lead mb-5">We're here to help you with all your financial needs. Reach out to our team today.</p>
+            <div class="d-flex justify-content-center gap-3">
+              <a href="#locations" class="btn btn-outline-light btn-lg px-4">Our Locations</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold mb-3">How to Reach Us</h2>
+          <div class="divider bg-primary mx-auto mb-4"></div>
+          <p class="lead text-muted">Multiple convenient ways to get in touch</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Phone -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm hover-top">
+              <div class="card-body p-4 text-center">
+                <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
+                  <i class="bi bi-telephone fs-3"></i>
+                </div>
+                <h5 class="text-primary mb-3">Call Us</h5>
+                <p class="card-text mb-1">Main Office</p>
+                <h5 class="mb-3"><a href="tel:+256393252006" class="text-dark">+256 393 252 006</a></h5>
+                <p class="small text-muted">Monday-Friday: 8:00 AM - 5:00 PM</p>
+                <p class="small text-muted">Saturday: 9:00 AM - 1:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm hover-top">
+              <div class="card-body p-4 text-center">
+                <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
+                  <i class="bi bi-envelope fs-3"></i>
+                </div>
+                <h5 class="text-primary mb-3">Email Us</h5>
+                <p class="card-text mb-4">Send us your inquiries and we'll respond within 24 hours</p>
+                <a href="mailto:growfund1@gmail.com" class="btn btn-outline-primary">growfund1@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visit -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm hover-top">
+              <div class="card-body p-4 text-center">
+                <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
+                  <i class="bi bi-geo-alt fs-3"></i>
+                </div>
+                <h5 class="text-primary mb-3">Visit Us</h5>
+                <p class="card-text mb-4">Come to any of our branches during working hours</p>
+                <a href="#locations" class="btn btn-outline-primary">View Locations</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Locations -->
+    <section id="locations" class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold mb-3">Our Branch Locations</h2>
+          <div class="divider bg-primary mx-auto mb-4"></div>
+          <p class="lead text-muted">Visit us at any of our conveniently located branches</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Head Office -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-start mb-3">
+                  <div class="icon-box-sm bg-primary bg-opacity-10 text-primary me-3">
+                    <i class="bi bi-building"></i>
+                  </div>
+                  <div>
+                    <h5 class="text-primary mb-1">Head Office</h5>
+                    <p class="small text-muted">Lira City</p>
+                  </div>
+                </div>
+                <address class="mb-4">
+                  Muntu Investment Building<br>
+                  Te-atat, Bar Ogole<br>
+                  Lira City West Division<br>
+                  Lira City, Uganda
+                </address>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-telephone text-primary me-2"></i>
+                  <a href="tel:+256393252006">+256 393 252 006</a>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-envelope text-primary me-2"></i>
+                  <a href="mailto:lira@growfund.co.ug">lira@growfund.co.ug</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gulu Branch -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-start mb-3">
+                  <div class="icon-box-sm bg-primary bg-opacity-10 text-primary me-3">
+                    <i class="bi bi-shop"></i>
+                  </div>
+                  <div>
+                    <h5 class="text-primary mb-1">Gulu Branch</h5>
+                    <p class="small text-muted">Gulu City</p>
+                  </div>
+                </div>
+                <address class="mb-4">
+                  Prime Business Plaza<br>
+                  Plot 25, Okidi Road<br>
+                  Gulu City, Uganda
+                </address>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-telephone text-primary me-2"></i>
+                  <a href="tel:+256393249653">+256 393 249 653</a>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-envelope text-primary me-2"></i>
+                  <a href="mailto:gulu@growfund.co.ug">gulu@growfund.co.ug</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kitgum Branch -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-start mb-3">
+                  <div class="icon-box-sm bg-primary bg-opacity-10 text-primary me-3">
+                    <i class="bi bi-shop"></i>
+                  </div>
+                  <div>
+                    <h5 class="text-primary mb-1">Kitgum Branch</h5>
+                    <p class="small text-muted">Kitgum Municipality</p>
+                  </div>
+                </div>
+                <address class="mb-4">
+                  Central Business Plaza<br>
+                  Omiya Anyima Road<br>
+                  Kitgum Municipality, Uganda
+                </address>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-telephone text-primary me-2"></i>
+                  <a href="tel:+256393100350">+256 393 100 350</a>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-envelope text-primary me-2"></i>
+                  <a href="mailto:kitgum@growfund.co.ug">kitgum@growfund.co.ug</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="py-0 bg-light">
+      <div class="container-fluid px-0">
+        <div class="ratio ratio-21x9">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.647242630084!2d32.89989431475398!3d2.247798998418577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMTQnNTIuMCJOIDMywrA1NCczMS4xIkU!5e0!3m2!1sen!2sug!4v1620000000000!5m2!1sen!2sug" 
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 bg-primary text-white text-center">
+      <div class="container">
+        <h2 class="mb-3">Need Immediate Assistance?</h2>
+        <p class="lead mb-4">Our customer service team is ready to help you</p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="tel:+256393252006" class="btn btn-light btn-lg px-4">
+            <i class="bi bi-telephone me-2"></i> Call Now
+          </a>
+          <a href="mailto:growfund1@gmail.com" class="btn btn-outline-light btn-lg px-4">
+            <i class="bi bi-envelope me-2"></i> Email Us
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5 class="text-uppercase mb-4">About GrowFund</h5>
+          <p>Grow Fund Investment Limited is a licensed microfinance institution regulated by UMRA, serving communities across Northern Uganda.</p>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5 class="text-uppercase mb-4">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="text-white">About Us</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white">Services</a></li>
+            <li class="mb-2"><a href="careers.html" class="text-white">Careers</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5 class="text-uppercase mb-4">Contact Us</h5>
+          <address>
+            <p><i class="bi bi-geo-alt-fill me-2"></i> Main Branch: Lira City, Uganda</p>
+            <p><i class="bi bi-telephone-fill me-2"></i> +256 393 252 006</p>
+            <p><i class="bi bi-envelope-fill me-2"></i> growfund1@gmail.com</p>
+          </address>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="small mb-0">&copy; 2023 Grow Fund Investment Limited. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="d-flex justify-content-md-end justify-content-center">
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Add scroll effect to navbar
+    document.addEventListener('DOMContentLoaded', function() {
+      const navbar = document.querySelector('.navbar');
+      
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
