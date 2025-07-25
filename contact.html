@@ -70,6 +70,35 @@
     .ratio-21x9 {
       --bs-aspect-ratio: 42.8571428571%;
     }
+
+
+    /* WhatsApp Button Styles */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      background-color: #20b358;
+    }
+
+    .whatsapp-btn i {
+      color: white;
+      font-size: 30px;
+    }
   </style>
 </head>
 <body>
@@ -301,6 +330,11 @@
       </div>
     </section>
   </main>
+
+    <!-- WhatsApp Button -->
+  <a href="https://wa.me/+256781480448" class="whatsapp-btn" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+  </a>
 
   <!-- Footer -->
   <footer class="bg-dark text-white py-5">
