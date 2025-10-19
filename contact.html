@@ -71,33 +71,79 @@
       --bs-aspect-ratio: 42.8571428571%;
     }
 
-
     /* WhatsApp Button Styles */
     .whatsapp-btn {
       position: fixed;
       bottom: 20px;
       right: 20px;
       z-index: 1000;
-      width: 60px;
-      height: 60px;
       background-color: #25D366;
-      border-radius: 50%;
+      border-radius: 50px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      padding: 12px 20px 12px 15px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       transition: all 0.3s ease;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
     }
 
     .whatsapp-btn:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
       box-shadow: 0 6px 12px rgba(0,0,0,0.3);
       background-color: #20b358;
+      color: white;
     }
 
     .whatsapp-btn i {
       color: white;
-      font-size: 30px;
+      font-size: 24px;
+      margin-right: 8px;
+    }
+
+    .whatsapp-text {
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    /* Optional: Add pulse animation */
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+      100% { transform: scale(1); }
+    }
+
+    .whatsapp-btn {
+      animation: pulse 2s infinite;
+    }
+
+    .whatsapp-btn:hover {
+      animation: none; /* Stop pulse on hover */
+    }
+
+    /* Responsive design for WhatsApp button */
+    @media (max-width: 768px) {
+      .whatsapp-btn {
+        padding: 10px 15px 10px 12px;
+      }
+      
+      .whatsapp-text {
+        font-size: 12px;
+      }
+      
+      .whatsapp-btn i {
+        font-size: 20px;
+        margin-right: 6px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .whatsapp-btn {
+        bottom: 15px;
+        right: 15px;
+        padding: 8px 12px 8px 10px;
+      }
     }
   </style>
 </head>
@@ -331,9 +377,10 @@
     </section>
   </main>
 
-    <!-- WhatsApp Button -->
-  <a href="https://wa.me/+256781480448" class="whatsapp-btn" target="_blank">
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/+256781480448" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
     <i class="bi bi-whatsapp"></i>
+    <span class="whatsapp-text">Chat with us</span>
   </a>
 
   <!-- Footer -->
